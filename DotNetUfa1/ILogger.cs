@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace WpfApp1
+namespace DotNetUfa1
 {
     internal interface ILogger
     {

@@ -1,6 +1,6 @@
 ﻿using System.Windows.Media;
 
-namespace WpfApp1
+namespace DotNetUfa1
 {
     internal class ColorService
     {
