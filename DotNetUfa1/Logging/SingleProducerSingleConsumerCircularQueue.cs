@@ -62,6 +62,12 @@ namespace Sparrow.Logging
 
         public bool Dequeue(out T entry)
         {
+            if (this._buffer.Count == 0)
+            {
+                entry = default(T);
+                return false;
+            }
+
             entry = _buffer.Dequeue();
             if (entry != null)
             {
