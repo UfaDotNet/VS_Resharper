@@ -15,10 +15,24 @@
                 VerticalAlignment="Center"
                 Content="Press me" FontSize="40"/>
 
-        <Border Grid.Column="1"
-                Width="65"
-                Height="65"
-                x:Name="ColorfulBorder"
-                Background="Gray"/>
+        <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Center">
+            <Border Width="65"
+                    Height="65"
+                    Margin="10"
+                    Background="Gray" />
+
+            <Border Width="65"
+                    Height="65"
+                    Margin="10"
+                    x:Name="ColorfulBorder"
+                    Background="DeepSkyBlue" />
+
+            <Border Width="65"
+                    Height="65"
+                    Margin="10"
+                    Background="LimeGreen" />
+        </StackPanel>
+
+
     </Grid>
 </Window>

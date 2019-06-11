@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Media;
 
 namespace DotNetUfa1
@@ -14,6 +15,9 @@ namespace DotNetUfa1
         {
             ColorService colorService = new ColorService();
             this.ColorfulBorder.Background = new SolidColorBrush(colorService.GetColor());
+
+            double maxValue = new DebugExample().GetMaxValue();
+            Console.WriteLine(maxValue);
         }
     }
 }
